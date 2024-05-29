@@ -6,6 +6,10 @@
       "majorVersion": "6",
       "isLts": true,
       "eol": "2024-11-12",
+      "mountpoints": [
+         "shared/Microsoft.NETCore.App/6.0.*",
+         "shared/Microsoft.AspNetCore.App/6.0.*"
+      ],
       "dependencies": []
    },
    {
@@ -15,6 +19,15 @@
       "majorVersion": "6",
       "isLts": true,
       "eol": "2024-11-12",
+      "mountpoints": [
+         "metadata/workloads/6.0.100",
+         "packs/Microsoft.AspNetCore.App.Ref/6.0.*",
+         "packs/Microsoft.NETCore.App.Host.ubuntu.24.04-x64/6.0.*",
+         "packs/Microsoft.NETCore.App.Ref/6.0.*",
+         "sdk/6.0.*",
+         "sdk-manifests/6.0.100",
+         "templates/6.0.*"
+      ],
       "dependencies": [
          "dotnet-runtime-60"
       ]
@@ -26,6 +39,10 @@
       "majorVersion": "8",
       "isLts": true,
       "eol": "2026-11-10",
+      "mountpoints": [
+         "shared/Microsoft.NETCore.App/8.0.*",
+         "shared/Microsoft.AspNetCore.App/8.0.*"
+      ],
       "dependencies": []
    },
    {
@@ -35,6 +52,17 @@
       "majorVersion": "8",
       "isLts": true,
       "eol": "2026-11-10",
+      "mountpoints": [
+         "metadata/workloads/8.0.100",
+         "packs/Microsoft.AspNetCore.App.Ref/8.0.*",
+         "packs/Microsoft.AspNetCore.App.Runtime.ubuntu.24.04-x64/8.0.*",
+         "packs/Microsoft.NETCore.App.Host.ubuntu.24.04-x64/8.0.*",
+         "packs/Microsoft.NETCore.App.Ref/8.0.*",
+         "packs/Microsoft.NETCore.App.Runtime.ubuntu.24.04-x64/8.0.*",
+         "sdk/8.0.*",
+         "sdk-manifests/8.0.100",
+         "templates/8.0.*"
+      ],
       "dependencies": [
          "dotnet-runtime-80"
       ]
