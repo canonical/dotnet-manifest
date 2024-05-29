@@ -1,0 +1,42 @@
+[
+   {
+      "key": "dotnet-runtime-60",
+      "name": "runtime",
+      "description": ".NET Runtime",
+      "majorVersion": "6",
+      "isLts": true,
+      "eol": "2024-11-12",
+      "dependencies": []
+   },
+   {
+      "key": "dotnet-sdk-60",
+      "name": "sdk",
+      "description": ".NET SDK",
+      "majorVersion": "6",
+      "isLts": true,
+      "eol": "2024-11-12",
+      "dependencies": [
+         "dotnet-runtime-60"
+      ]
+   },
+   {
+      "key": "dotnet-runtime-80",
+      "name": "runtime",
+      "description": ".NET Runtime",
+      "majorVersion": "8",
+      "isLts": true,
+      "eol": "2026-11-10",
+      "dependencies": []
+   },
+   {
+      "key": "dotnet-sdk-80",
+      "name": "sdk",
+      "description": ".NET SDK",
+      "majorVersion": "8",
+      "isLts": true,
+      "eol": "2026-11-10",
+      "dependencies": [
+         "dotnet-runtime-80"
+      ]
+   }
+]
