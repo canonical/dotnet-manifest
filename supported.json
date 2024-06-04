@@ -6,6 +6,7 @@
       "majorVersion": "6",
       "isLts": true,
       "eol": "2024-11-12",
+      "dotnetRoot": "/",
       "mountpoints": [
          "shared/Microsoft.NETCore.App/6.0.*"
       ],
@@ -18,6 +19,7 @@
       "majorVersion": "6",
       "isLts": true,
       "eol": "2024-11-12",
+      "dotnetRoot": "/usr/lib/dotnet",
       "mountpoints": [
          "metadata/workloads/6.0.100",
          "packs/Microsoft.AspNetCore.App.Ref/6.0.*",
@@ -38,6 +40,7 @@
       "majorVersion": "8",
       "isLts": true,
       "eol": "2026-11-10",
+      "dotnetRoot": "/",
       "mountpoints": [
          "shared/Microsoft.NETCore.App/8.0.*"
       ],
@@ -50,6 +53,7 @@
       "majorVersion": "8",
       "isLts": true,
       "eol": "2026-11-10",
+      "dotnetRoot": "/usr/lib/dotnet",
       "mountpoints": [
          "metadata/workloads/8.0.100",
          "packs/Microsoft.AspNetCore.App.Ref/8.0.*",
