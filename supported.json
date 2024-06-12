@@ -23,7 +23,7 @@
       "mountpoints": [
          "metadata/workloads/6.0.100",
          "packs/Microsoft.AspNetCore.App.Ref/6.0.*",
-         "packs/Microsoft.NETCore.App.Host.ubuntu.24.04-x64/6.0.*",
+         "packs/Microsoft.NETCore.App.Host.ubuntu.22.04-x64/6.0.*",
          "packs/Microsoft.NETCore.App.Ref/6.0.*",
          "sdk/6.0.*",
          "sdk-manifests/6.0.100",
@@ -57,10 +57,10 @@
       "mountpoints": [
          "metadata/workloads/8.0.100",
          "packs/Microsoft.AspNetCore.App.Ref/8.0.*",
-         "packs/Microsoft.AspNetCore.App.Runtime.ubuntu.24.04-x64/8.0.*",
-         "packs/Microsoft.NETCore.App.Host.ubuntu.24.04-x64/8.0.*",
+         "packs/Microsoft.AspNetCore.App.Runtime.ubuntu.22.04-x64/8.0.*",
+         "packs/Microsoft.NETCore.App.Host.ubuntu.22.04-x64/8.0.*",
          "packs/Microsoft.NETCore.App.Ref/8.0.*",
-         "packs/Microsoft.NETCore.App.Runtime.ubuntu.24.04-x64/8.0.*",
+         "packs/Microsoft.NETCore.App.Runtime.ubuntu.22.04-x64/8.0.*",
          "sdk/8.0.*",
          "sdk-manifests/8.0.100",
          "templates/8.0.*"
