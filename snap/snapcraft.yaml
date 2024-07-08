@@ -1,0 +1,38 @@
+name: dotnet-manifest
+base: core24
+adopt-info: dotnet-manifest
+summary: The list of all available .NET content snap versions
+description: |
+  The .NET manifest is a list of all .NET Runtime and SDK content snaps
+  available to be downloaded by the .NET snap.
+
+grade: stable
+confinement: strict
+
+platforms:
+  amd64:
+    build-on: [amd64]
+  arm64:
+    build-on: [amd64]
+
+slots:
+  dotnet-manifest:
+    interface: content
+    content: dotnet-manifest
+    source:
+      read:
+        - $SNAP
+
+parts:
+  dotnet-manifest:
+    plugin: dump
+    source: .
+    build-packages:
+      - git
+    override-build: |
+      craftctl default
+      craftctl set version="$(git rev-parse --short HEAD)"
+    prime:
+      - -README*
+      - -.gitignore
+      - -.github
