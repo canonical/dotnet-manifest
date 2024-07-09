@@ -1,0 +1,66 @@
+name: dotnet-manifest
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+env:
+  SNAP_NAME: dotnet-manifest
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      snaps: ${{ steps.gather-snap-names.outputs.snaps }}
+    steps:
+    - uses: actions/checkout@v4
+      id: checkout
+    - uses: snapcore/action-build@v1
+      id: build
+    - id: gather-snap-names
+      run: |
+        ls *.snap
+        AMD64_SNAP=$(ls *amd64.snap)
+        ARM64_SNAP=$(ls *arm64.snap)
+        echo "amd64_snap=$AMD64_SNAP" >> "$GITHUB_OUTPUT"
+        echo "arm64_snap=$ARM64_SNAP" >> "$GITHUB_OUTPUT"
+        echo "snaps=[\"${AMD64_SNAP}\", \"${ARM64_SNAP}\"]" >> "$GITHUB_OUTPUT"
+    - uses: actions/upload-artifact@v4
+      id: upload-artifact-amd64
+      with:
+        name: ${{ steps.gather-snap-names.outputs.amd64_snap }}
+        path: ${{ steps.gather-snap-names.outputs.amd64_snap }}
+    - uses: actions/upload-artifact@v4
+      id: upload-artifact-arm64
+      with:
+        name: ${{ steps.gather-snap-names.outputs.arm64_snap }}
+        path: ${{ steps.gather-snap-names.outputs.arm64_snap }}
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ github.event_name == 'push' }}
+    strategy:
+      matrix:
+        snap: ${{ fromJson(needs.build.outputs.snaps) }}
+    steps:
+      - uses: actions/download-artifact@v4
+        id: download-artifact
+        with:
+          name: ${{ matrix.snap }}
+      - name: Gather filename
+        id: gather-filename
+        env:
+          ARTIFACT_PATH: ${{ steps.download-artifact.outputs.download-path }}
+        run: |
+          ls -la $ARTIFACT_PATH
+          SNAP_FILE_NAME=$(ls ${ARTIFACT_PATH}/${SNAP_NAME}*.snap)
+          echo "SNAP_PATH=${SNAP_FILE_NAME}" >> "$GITHUB_OUTPUT"
+      - uses: snapcore/action-publish@v1
+        env:
+          SNAPCRAFT_STORE_CREDENTIALS: ${{ secrets.SNAP_STORE_LOGIN }}
+        with:
+          snap: ${{ steps.gather-filename.outputs.SNAP_PATH }}
+          release: edge
