@@ -29,8 +29,10 @@ parts:
     source: .
     build-packages:
       - git
+      - jq
     override-build: |
       craftctl default
+      jq -c . < supported.json > /dev/null
       craftctl set version="$(git rev-parse --short HEAD)"
     prime:
       - supported.json
