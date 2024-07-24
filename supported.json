@@ -13,6 +13,21 @@
       "dependencies": []
    },
    {
+      "key": "aspnetcore-runtime-60",
+      "name": "aspnetcore-runtime",
+      "description": "ASP.NET Core Runtime",
+      "majorVersion": 6,
+      "isLts": true,
+      "eol": "2024-11-12",
+      "dotnetRoot": "/usr/lib/dotnet",
+      "mountpoints": [
+         "shared/Microsoft.AspNetCore.App/6.0.*"
+      ],
+      "dependencies": [
+         "dotnet-runtime-60"
+      ]
+   },
+   {
       "key": "dotnet-sdk-60",
       "name": "sdk",
       "description": ".NET SDK",
@@ -30,7 +45,7 @@
          "templates/6.0.*"
       ],
       "dependencies": [
-         "dotnet-runtime-60"
+         "aspnetcore-runtime-60"
       ]
    },
    {
@@ -45,6 +60,21 @@
          "shared/Microsoft.NETCore.App/8.0.*"
       ],
       "dependencies": []
+   },
+   {
+      "key": "aspnetcore-runtime-80",
+      "name": "aspnetcore-runtime",
+      "description": "ASP.NET Core Runtime",
+      "majorVersion": 8,
+      "isLts": true,
+      "eol": "2026-11-10",
+      "dotnetRoot": "/usr/lib/dotnet",
+      "mountpoints": [
+         "shared/Microsoft.AspNetCore.App/8.0.*"
+      ],
+      "dependencies": [
+         "dotnet-runtime-80"
+      ]
    },
    {
       "key": "dotnet-sdk-80",
@@ -66,7 +96,7 @@
          "templates/8.0.*"
       ],
       "dependencies": [
-         "dotnet-runtime-80"
+         "aspnetcore-runtime-80"
       ]
    }
 ]
