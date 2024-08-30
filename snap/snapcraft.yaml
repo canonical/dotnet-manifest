@@ -32,8 +32,12 @@ parts:
       - jq
     override-build: |
       craftctl default
-      jq -c . < supported.json > /dev/null
+      # Validate JSON files
+      for file in $(find . -type f -name *.json); do
+        jq -c . < $file > /dev/null
+        echo "${file} is valid."
+      done
       craftctl set version="$(git rev-parse --short HEAD)"
     prime:
-      - supported.json
+      - v1
       - LICENSE
