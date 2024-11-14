@@ -60,5 +60,36 @@
       "dependencies": [
          "aspnetcore-runtime-80"
       ]
+   },
+   {
+      "key": "dotnet-runtime-90",
+      "name": "runtime",
+      "description": ".NET Runtime",
+      "majorVersion": 9,
+      "isLts": false,
+      "eol": "2026-05-12",
+      "dependencies": []
+   },
+   {
+      "key": "aspnetcore-runtime-90",
+      "name": "aspnetcore-runtime",
+      "description": "ASP.NET Core Runtime",
+      "majorVersion": 9,
+      "isLts": false,
+      "eol": "2026-05-12",
+      "dependencies": [
+         "dotnet-runtime-90"
+      ]
+   },
+   {
+      "key": "dotnet-sdk-90",
+      "name": "sdk",
+      "description": ".NET SDK",
+      "majorVersion": 9,
+      "isLts": false,
+      "eol": "2026-05-12",
+      "dependencies": [
+         "aspnetcore-runtime-90"
+      ]
    }
 ]
