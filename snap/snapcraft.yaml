@@ -39,6 +39,6 @@ parts:
       done
       craftctl set version="$(git rev-parse --short HEAD)"
     prime:
-      - archive.json
       - supported.json
+      - unsupported.json
       - LICENSE
