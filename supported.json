@@ -1,64 +1,11 @@
 [
    {
-      "key": "dotnet-runtime-60",
-      "name": "runtime",
-      "description": ".NET Runtime",
-      "majorVersion": 6,
-      "isLts": true,
-      "eol": "2024-11-12",
-      "dotnetRoot": "/",
-      "mountpoints": [
-         "shared/Microsoft.NETCore.App/6.0.*"
-      ],
-      "dependencies": []
-   },
-   {
-      "key": "aspnetcore-runtime-60",
-      "name": "aspnetcore-runtime",
-      "description": "ASP.NET Core Runtime",
-      "majorVersion": 6,
-      "isLts": true,
-      "eol": "2024-11-12",
-      "dotnetRoot": "/usr/lib/dotnet",
-      "mountpoints": [
-         "shared/Microsoft.AspNetCore.App/6.0.*"
-      ],
-      "dependencies": [
-         "dotnet-runtime-60"
-      ]
-   },
-   {
-      "key": "dotnet-sdk-60",
-      "name": "sdk",
-      "description": ".NET SDK",
-      "majorVersion": 6,
-      "isLts": true,
-      "eol": "2024-11-12",
-      "dotnetRoot": "/usr/lib/dotnet",
-      "mountpoints": [
-         "metadata/workloads/6.0.100",
-         "packs/Microsoft.AspNetCore.App.Ref/6.0.*",
-         "packs/Microsoft.NETCore.App.Host.ubuntu.22.04-x64/6.0.*",
-         "packs/Microsoft.NETCore.App.Ref/6.0.*",
-         "sdk/6.0.*",
-         "sdk-manifests/6.0.100",
-         "templates/6.0.*"
-      ],
-      "dependencies": [
-         "aspnetcore-runtime-60"
-      ]
-   },
-   {
       "key": "dotnet-runtime-80",
       "name": "runtime",
       "description": ".NET Runtime",
       "majorVersion": 8,
       "isLts": true,
       "eol": "2026-11-10",
-      "dotnetRoot": "/",
-      "mountpoints": [
-         "shared/Microsoft.NETCore.App/8.0.*"
-      ],
       "dependencies": []
    },
    {
@@ -68,10 +15,6 @@
       "majorVersion": 8,
       "isLts": true,
       "eol": "2026-11-10",
-      "dotnetRoot": "/usr/lib/dotnet",
-      "mountpoints": [
-         "shared/Microsoft.AspNetCore.App/8.0.*"
-      ],
       "dependencies": [
          "dotnet-runtime-80"
       ]
@@ -83,20 +26,39 @@
       "majorVersion": 8,
       "isLts": true,
       "eol": "2026-11-10",
-      "dotnetRoot": "/usr/lib/dotnet",
-      "mountpoints": [
-         "metadata/workloads/8.0.100",
-         "packs/Microsoft.AspNetCore.App.Ref/8.0.*",
-         "packs/Microsoft.AspNetCore.App.Runtime.ubuntu.22.04-x64/8.0.*",
-         "packs/Microsoft.NETCore.App.Host.ubuntu.22.04-x64/8.0.*",
-         "packs/Microsoft.NETCore.App.Ref/8.0.*",
-         "packs/Microsoft.NETCore.App.Runtime.ubuntu.22.04-x64/8.0.*",
-         "sdk/8.0.*",
-         "sdk-manifests/8.0.100",
-         "templates/8.0.*"
-      ],
       "dependencies": [
          "aspnetcore-runtime-80"
+      ]
+   },
+   {
+      "key": "dotnet-runtime-90",
+      "name": "runtime",
+      "description": ".NET Runtime",
+      "majorVersion": 9,
+      "isLts": false,
+      "eol": "2026-05-12",
+      "dependencies": []
+   },
+   {
+      "key": "aspnetcore-runtime-90",
+      "name": "aspnetcore-runtime",
+      "description": "ASP.NET Core Runtime",
+      "majorVersion": 9,
+      "isLts": false,
+      "eol": "2026-05-12",
+      "dependencies": [
+         "dotnet-runtime-90"
+      ]
+   },
+   {
+      "key": "dotnet-sdk-90",
+      "name": "sdk",
+      "description": ".NET SDK",
+      "majorVersion": 9,
+      "isLts": false,
+      "eol": "2026-05-12",
+      "dependencies": [
+         "aspnetcore-runtime-90"
       ]
    }
 ]
