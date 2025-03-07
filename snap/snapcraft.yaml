@@ -1,5 +1,5 @@
 name: dotnet-manifest
-base: core24
+base: core22
 adopt-info: dotnet-manifest
 summary: The list of all available .NET content snap versions
 description: |
@@ -9,11 +9,11 @@ description: |
 grade: stable
 confinement: strict
 
-platforms:
-  amd64:
-    build-on: [amd64]
-  arm64:
-    build-on: [amd64]
+architectures:
+  - build-on: [amd64]
+    build-for: [amd64]
+  - build-on: [amd64]
+    build-for: [arm64]
 
 slots:
   dotnet-manifest:
