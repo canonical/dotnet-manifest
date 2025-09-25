@@ -1,0 +1,105 @@
+[
+   {
+      "key": "dotnet-runtime-80",
+      "name": "runtime",
+      "description": ".NET Runtime",
+      "majorVersion": 8,
+      "isLts": true,
+      "grade": "rtm",
+      "eol": "2026-11-10",
+      "dependencies": []
+   },
+   {
+      "key": "aspnetcore-runtime-80",
+      "name": "aspnetcore-runtime",
+      "description": "ASP.NET Core Runtime",
+      "majorVersion": 8,
+      "isLts": true,
+      "grade": "rtm",
+      "eol": "2026-11-10",
+      "dependencies": [
+         "dotnet-runtime-80"
+      ]
+   },
+   {
+      "key": "dotnet-sdk-80",
+      "name": "sdk",
+      "description": ".NET SDK",
+      "majorVersion": 8,
+      "isLts": true,
+      "grade": "rtm",
+      "eol": "2026-11-10",
+      "dependencies": [
+         "aspnetcore-runtime-80"
+      ]
+   },
+   {
+      "key": "dotnet-runtime-90",
+      "name": "runtime",
+      "description": ".NET Runtime",
+      "majorVersion": 9,
+      "isLts": false,
+      "grade": "rtm",
+      "eol": "2026-05-12",
+      "dependencies": []
+   },
+   {
+      "key": "aspnetcore-runtime-90",
+      "name": "aspnetcore-runtime",
+      "description": "ASP.NET Core Runtime",
+      "majorVersion": 9,
+      "isLts": false,
+      "grade": "rtm",
+      "eol": "2026-05-12",
+      "dependencies": [
+         "dotnet-runtime-90"
+      ]
+   },
+   {
+      "key": "dotnet-sdk-90",
+      "name": "sdk",
+      "description": ".NET SDK",
+      "majorVersion": 9,
+      "isLts": false,
+      "grade": "rtm",
+      "eol": "2026-05-12",
+      "dependencies": [
+         "aspnetcore-runtime-90"
+      ]
+   }
+   ,
+   {
+      "key": "dotnet-runtime-100",
+      "name": "runtime",
+      "description": ".NET Runtime",
+      "majorVersion": 10,
+      "isLts": true,
+      "grade": "rc",
+      "eol": null,
+      "dependencies": []
+   },
+   {
+      "key": "aspnetcore-runtime-100",
+      "name": "aspnetcore-runtime",
+      "description": "ASP.NET Core Runtime",
+      "majorVersion": 10,
+      "isLts": true,
+      "grade": "rc",
+      "eol": null,
+      "dependencies": [
+         "dotnet-runtime-100"
+      ]
+   },
+   {
+      "key": "dotnet-sdk-100",
+      "name": "sdk",
+      "description": ".NET SDK",
+      "majorVersion": 10,
+      "isLts": true,
+      "grade": "rc",
+      "eol": null,
+      "dependencies": [
+         "aspnetcore-runtime-100"
+      ]
+   }
+]

@@ -41,4 +41,5 @@ parts:
     prime:
       - supported.json
       - unsupported.json
+      - v2/*
       - LICENSE
