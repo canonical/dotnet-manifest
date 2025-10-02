@@ -5,6 +5,7 @@
         "description": ".NET Runtime",
         "majorVersion": 6,
         "isLts": true,
+        "grade": "rtm",
         "eol": "2024-11-12",
         "dependencies": []
     },
@@ -14,6 +15,7 @@
         "description": "ASP.NET Core Runtime",
         "majorVersion": 6,
         "isLts": true,
+        "grade": "rtm",
         "eol": "2024-11-12",
         "dependencies": [
             "dotnet-runtime-60"
@@ -25,6 +27,7 @@
         "description": ".NET SDK",
         "majorVersion": 6,
         "isLts": true,
+        "grade": "rtm",
         "eol": "2024-11-12",
         "dependencies": [
             "aspnetcore-runtime-60"
