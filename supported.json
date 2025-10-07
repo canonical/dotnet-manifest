@@ -5,6 +5,7 @@
       "description": ".NET Runtime",
       "majorVersion": 8,
       "isLts": true,
+      "grade": "rtm",
       "eol": "2026-11-10",
       "dependencies": []
    },
@@ -14,6 +15,7 @@
       "description": "ASP.NET Core Runtime",
       "majorVersion": 8,
       "isLts": true,
+      "grade": "rtm",
       "eol": "2026-11-10",
       "dependencies": [
          "dotnet-runtime-80"
@@ -25,6 +27,7 @@
       "description": ".NET SDK",
       "majorVersion": 8,
       "isLts": true,
+      "grade": "rtm",
       "eol": "2026-11-10",
       "dependencies": [
          "aspnetcore-runtime-80"
@@ -36,6 +39,7 @@
       "description": ".NET Runtime",
       "majorVersion": 9,
       "isLts": false,
+      "grade": "rtm",
       "eol": "2026-05-12",
       "dependencies": []
    },
@@ -45,6 +49,7 @@
       "description": "ASP.NET Core Runtime",
       "majorVersion": 9,
       "isLts": false,
+      "grade": "rtm",
       "eol": "2026-05-12",
       "dependencies": [
          "dotnet-runtime-90"
@@ -56,6 +61,7 @@
       "description": ".NET SDK",
       "majorVersion": 9,
       "isLts": false,
+      "grade": "rtm",
       "eol": "2026-05-12",
       "dependencies": [
          "aspnetcore-runtime-90"
