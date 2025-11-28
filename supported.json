@@ -73,7 +73,7 @@
       "description": ".NET Runtime",
       "majorVersion": 10,
       "isLts": true,
-      "grade": "rc",
+      "grade": "rtm",
       "eol": "2028-11-14",
       "dependencies": []
    },
@@ -83,7 +83,7 @@
       "description": "ASP.NET Core Runtime",
       "majorVersion": 10,
       "isLts": true,
-      "grade": "rc",
+      "grade": "rtm",
       "eol": "2028-11-14",
       "dependencies": [
          "dotnet-runtime-100"
@@ -95,7 +95,7 @@
       "description": ".NET SDK",
       "majorVersion": 10,
       "isLts": true,
-      "grade": "rc",
+      "grade": "rtm",
       "eol": "2028-11-14",
       "dependencies": [
          "aspnetcore-runtime-100"
