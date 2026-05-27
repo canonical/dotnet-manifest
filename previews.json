@@ -1,1 +1,36 @@
-[]
+[
+    {
+      "key": "dotnet-runtime-110",
+      "name": "runtime",
+      "description": ".NET Runtime",
+      "majorVersion": 11,
+      "isLts": false,
+      "grade": "preview",
+      "eol": null,
+      "dependencies": []
+   },
+   {
+      "key": "aspnetcore-runtime-110",
+      "name": "aspnetcore-runtime",
+      "description": "ASP.NET Core Runtime",
+      "majorVersion": 11,
+      "isLts": false,
+      "grade": "preview",
+      "eol": null,
+      "dependencies": [
+         "dotnet-runtime-110"
+      ]
+   },
+   {
+      "key": "dotnet-sdk-110",
+      "name": "sdk",
+      "description": ".NET SDK",
+      "majorVersion": 11,
+      "isLts": false,
+      "grade": "preview",
+      "eol": null,
+      "dependencies": [
+         "aspnetcore-runtime-110"
+      ]
+   }
+]
