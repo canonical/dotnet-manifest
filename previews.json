@@ -5,7 +5,7 @@
       "description": ".NET Runtime",
       "majorVersion": 11,
       "isLts": false,
-      "grade": "preview",
+      "grade": "rc",
       "eol": null,
       "dependencies": []
    },
@@ -15,7 +15,7 @@
       "description": "ASP.NET Core Runtime",
       "majorVersion": 11,
       "isLts": false,
-      "grade": "preview",
+      "grade": "rc",
       "eol": null,
       "dependencies": [
          "dotnet-runtime-110"
@@ -27,7 +27,7 @@
       "description": ".NET SDK",
       "majorVersion": 11,
       "isLts": false,
-      "grade": "preview",
+      "grade": "rc",
       "eol": null,
       "dependencies": [
          "aspnetcore-runtime-110"
